@@ -1,0 +1,293 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Press Start 2P", cursive;
+}
+
+body {
+  background-image: url(./images/pokemon\ bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-attachment: fixed;
+  font-size: 14px;
+}
+
+#pokemonForm input,
+#pokemonForm select,
+#pokemonForm button {
+  font-family: "Press Start 2P", cursive;
+  font-size: 12px;
+  padding: 10px 15px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #222;
+  margin: 5px;
+  outline: none;
+  box-shadow: 0 4px 0 #999;
+  transition: all 0.2s ease-in-out;
+}
+
+#pokemonForm button {
+  margin-bottom: 70px;
+}
+
+#pokemonForm label {
+  display: block;
+  margin-top: 20px;
+  font-family: "Press Start 2P", cursive;
+}
+
+#pokemonForm input:focus,
+#pokemonForm select:focus,
+#pokemonForm button:hover {
+  background-color: #f1f1f1;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #888;
+}
+
+#pokemonForm select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: center;
+  padding-right: 30px;
+}
+
+#pokemonForm button {
+  cursor: pointer;
+  background-color: #ffcb05;
+  color: #3b4cca;
+  border: 2px solid #3b4cca;
+  font-weight: bold;
+}
+
+#pokemonForm button:hover {
+  background-color: #f6b800;
+}
+
+.main-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+}
+
+#pokemonForm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 75vw;
+  justify-content: center;
+}
+
+.card {
+  margin: auto;
+  width: 380px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  padding-bottom: 30px;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.card-top {
+  background-color: #2196f3;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  position: relative;
+  padding: 60px 0 30px;
+  clip-path: ellipse(100% 80% at 50% 0%);
+}
+
+.pokemon-img {
+  width: 160px;
+  margin-top: -70px;
+  z-index: 1;
+  position: relative;
+}
+
+.hp {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: #fff;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.name {
+  margin: 15px 0 10px;
+  font-size: 22px;
+}
+
+.type-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 999px;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.type-badge.water {
+  background-color: #2196f3;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.stats h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.stats p {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: #555;
+}
+
+/* 🔥 Fire */
+.type-fire {
+  background-color: #f44336; /* Red */
+}
+
+/* 💧 Water */
+.type-water {
+  background-color: #2196f3; /* Blue */
+}
+
+/* 🌿 Grass */
+.type-grass {
+  background-color: #4caf50; /* Green */
+}
+
+/* ⚡ Electric */
+.type-electric {
+  background-color: #ffeb3b; /* Yellow */
+  color: #000; /* Better contrast on yellow */
+}
+
+/* ❄️ Ice */
+.type-ice {
+  background-color: #00bcd4;
+}
+
+/* 🥊 Fighting */
+.type-fighting {
+  background-color: #d32f2f;
+}
+
+/* ☠️ Poison */
+.type-poison {
+  background-color: #9c27b0;
+}
+
+/* 🌍 Ground */
+.type-ground {
+  background-color: #a1887f;
+}
+
+/* 🕊️ Flying */
+.type-flying {
+  background-color: #81d4fa;
+}
+
+/* 🪨 Rock */
+.type-rock {
+  background-color: #795548;
+}
+
+/* 👻 Ghost */
+.type-ghost {
+  background-color: #607d8b;
+}
+
+/* 🐉 Dragon */
+.type-dragon {
+  background-color: #673ab7;
+}
+
+/* 🌑 Dark */
+.type-dark {
+  background-color: #212121;
+  color: #fff;
+}
+
+/* 🛡️ Steel */
+.type-steel {
+  background-color: #90a4ae;
+}
+
+/* ✨ Fairy */
+.type-fairy {
+  background-color: #f48fb1;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 12px;
+  }
+
+  #pokemonForm input,
+  #pokemonForm select,
+  #pokemonForm button {
+    font-size: 10px;
+    padding: 8px 12px;
+  }
+
+  .form-wrapper {
+    margin-top: 60px;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+
+  .card-top {
+    padding: 40px 0 20px;
+  }
+
+  .pokemon-img {
+    width: 130px;
+    margin-top: -50px;
+  }
+
+  .name {
+    font-size: 18px;
+  }
+
+  .stats h3 {
+    font-size: 18px;
+  }
+
+  .stats p {
+    font-size: 12px;
+  }
+
+  /* Adjust padding for type badges */
+  .type-badge {
+    font-size: 12px;
+    padding: 6px 15px;
+  }
+}

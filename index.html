@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokémon Cards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./images/download.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="form-wrapper">
+        <form id="pokemonForm">
+          <label for="cardCount">Number of Pokémon Cards:</label>
+          <input
+            type="number"
+            id="cardCount"
+            name="cardCount"
+            min="1"
+            required
+          />
+          <label for="type">Select Type:</label>
+          <select id="type">
+            <option value="fire">Fire 🔥</option>
+            <option value="water">Water 💧</option>
+            <option value="grass">Grass 🌿</option>
+            <option value="electric">Electric ⚡</option>
+            <option value="Ice">Ice ❄️</option>
+            <option value="Fighting">Fighting 🥊</option>
+            <option value="Poison">Poison ☠️</option>
+            <option value="Ground">Ground 🌍</option>
+            <option value="Flying">Flying 🕊️</option>
+            <option value="Rock">Rock 🪨</option>
+            <option value="Ghost">Ghost 👻</option>
+            <option value="Dragon">Dragon 🐉</option>
+            <option value="Dark">Dark 🌑</option>
+            <option value="Steel">Steel 🛡️</option>
+            <option value="Fairy">Fairy ✨</option>
+          </select>
+          <button id="generateButton" type="submit">
+            Generate Pokémon Cards
+          </button>
+        </form>
+      </div>
+      >
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
