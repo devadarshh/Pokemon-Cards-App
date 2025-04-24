@@ -1,5 +1,4 @@
-# The-Pokémon
-
+# Pokémon Card App
 A simple web application that allows users to enter the number of Pokémon cards they want to see and select a category (type) of Pokémon. The app fetches and displays Pokémon data using the [PokeAPI](https://pokeapi.co/).
 
 ## 🔗 Live Demo
